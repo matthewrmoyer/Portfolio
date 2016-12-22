@@ -12,7 +12,7 @@ $big-screen: "(min-width: 1300px)";
 .row{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 //makes 12 col layout
 @mixin col($cols){
@@ -70,5 +70,19 @@ $big-screen: "(min-width: 1300px)";
   @include col(12);
   background-color: darken(green, 10%);
 }
+
+$font-size: 18px;
+
+.name{
+  //min font-size = 18px then scales with 3vw
+
+  font-size: calc(18px + 3vw);
+}
+
+
+
+
+
+
 
 
