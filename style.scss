@@ -1,88 +1,173 @@
+//reset
 @import url("reset.css");
 /* read this about this box-sizing thingy 
 https://css-tricks.com/box-sizing/*/
 * { box-sizing: border-box; }
 
+//screan sizes
 $small-screen: "(max-width: 500px)";
 $big-screen: "(min-width: 1300px)";
 
+//colors
+$base-color: hsla(0, 0%, 96%, 1);
+$primary-color: hsla(18, 89%, 60%, 1); 
+$accent-color: hsla(156, 60%, 41%, 1);
+$light-grey: hsla(216, 3%, 63%, 1);
+$dark-grey: hsl(0, 0%, 15%);
 
 
 
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+//better box measurements
+* {
+    box-sizing: border-box;
 }
+body{
+  //min font is 16 then scales .5vw
+    font-size: calc(16px + .5vw);
+    font-family: 'Open Sans';
+    background-color: $base-color;
+    color: $dark-grey;
+}
+h2{
+  padding: 2px 5px 2px 5px;
+}
+p{
+  padding: 1px 5px 5px 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+//font-awesome characters
+.fa{
+ 
+}
+
 //makes 12 col layout
+//TODO add break points?
 @mixin col($cols){
   width: (($cols/12)*100+0%);
   text-align: center;
-  //can change height
   //can change margin
-  border: 2px solid black;
+  border: 2px solid white;
   margin-top: 5px;
- 
+  margin-left: 1px;
+  margin-right: 1px;
+  box-shadow: 0 0 3px 0px black;
+  background-color: $light-grey;
   }
 
 .col-1{
   @include col(1);
-  background-color: orange;
 }
 .col-2{
   @include col(2);
-  background-color: purple;
 }
-
 .col-3{
   @include col(3);
-  background-color: red;
 }
 .col-4{
   @include col(4);
-  background-color: yellow; 
   
 }.col-5{
   @include col(5);
-  background-color: pink;
 }.col-6{
   @include col(6);
-  background-color: gray;
 }
 .col-7{
   @include col(7);
-  background-color: brown;
 }.col-8{
   @include col(8);
-  background-color: darken(grey, 10%);
 }
 .col-9{
   @include col(9);
-  background-color: blue;
 }
 .col-10{
   @include col(10);
-  background-color: darken(orange, 10%);
 }.col-11{
   @include col(11);
-  background-color: lighten(blue, 10%);
 }.col-12{
   @include col(12);
-  background-color: darken(green, 10%);
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: .8;
+  //add all container properties like this!!! it would be a cool mini-css framework!!!
+  //do same for items with item properties?
+   &.space-around{
+    justify-content: space-around;
+ 
+  }
+
 }
 
-$font-size: 18px;
-
+.name-row{
+  justify-content: center;
+}
 .name{
-  //min font-size = 18px then scales with 3vw
+  //min font-size = 20px then scales with 1vw
 
-  font-size: calc(18px + 3vw);
+  font-size: calc(20px + 1vw);
+    box-shadow: 0 0 0px 0px black;
+  background-color: $base-color;
+    border: none;
+    text-align: left;
+    padding-left: 4vw;
+
+}
+.social-media-links-row{
+  justify-content: flex-start;
+  padding-left: 8.5vw;
+  li{
+    display: inline;
+    font-size: calc(18px + 1vw);
+  }
+}
+
+.personal-background-summary{
+  font-size: calc(16px + 1vw);
+  p{
+    padding-bottom: 10px;
+    line-height: 1.1;
+  }
+}
+
+.past-link-row{
+    color: white;
+
+  a{
+  color: white;
+}
 }
 
 
+.work{
+    p {
+      text-align: left;
+  }
 
+}
 
+.education{
+ .tesol-heading{
+  line-height: 1.5;
+}
+  p {
+      text-align: left;
+  }
+ 
+ .aerospace-studies-heading{
+  line-height: 1.5;
+ }
+}
 
-
+.future-link-row{
+  a{
+  color: white;
+}
+}
 
 
