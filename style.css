@@ -7,21 +7,6 @@ https://css-tricks.com/box-sizing/*/
 * {
   box-sizing: border-box; }
 
-body {
-  font-size: calc(16px + .5vw);
-  font-family: 'Open Sans';
-  background-color: whitesmoke;
-  color: #262626; }
-
-h2 {
-  padding: 2px 5px 2px 5px; }
-
-p {
-  padding: 1px 5px 5px 10px; }
-
-ul {
-  list-style-type: none; }
-
 .col-1 {
   width: 8.33333%;
   text-align: center;
@@ -142,6 +127,25 @@ ul {
   box-shadow: 0 0 3px 0px black;
   background-color: #9ea0a3; }
 
+body {
+  user-select: none;
+  font-size: calc(16px + .5vw);
+  font-family: 'Open Sans';
+  background-color: whitesmoke;
+  color: #262626; }
+
+h2 {
+  padding: 2px 5px 2px 5px; }
+
+p {
+  padding: 1px 5px 5px 10px; }
+
+ul {
+  list-style-type: none; }
+
+.fa {
+  cursor: pointer; }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -176,20 +180,489 @@ ul {
 
 .past-link-row {
   color: white; }
+  .past-link-row .past-heading {
+    cursor: pointer; }
   .past-link-row a {
     color: white; }
 
+.work .work-paragraphs {
+  padding-left: 10px;
+  padding-right: 10px; }
 .work p {
-  text-align: left; }
+  text-align: left;
+  display: inline;
+  margin-left: -15px; }
 
 .education .tesol-heading {
   line-height: 1.5; }
+.education .tesol-paragraphs {
+  padding-left: 10px;
+  padding-right: 10px; }
+.education .aerospace-studies-paragraphs {
+  padding-left: 10px;
+  padding-right: 10px; }
 .education p {
-  text-align: left; }
+  text-align: left;
+  display: inline;
+  margin-left: -15px; }
 .education .aerospace-studies-heading {
-  line-height: 1.5; }
+  padding-top: 10px; }
 
 .future-link-row a {
   color: white; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+.work-education-row {
+  font-size: 2vmax; }
+  .work-education-row p {
+    opacity: 0; }
+  .work-education-row li {
+    opacity: 0; }
+  .work-education-row h3 {
+    opacity: 0; }
+
+.work-education-row h3:nth-child(1) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.1s; }
+
+.work-education-row li:nth-child(1) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.1s; }
+
+.work-education-row p:nth-child(1) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.1s; }
+
+.work-education-row h3:nth-child(2) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.2s; }
+
+.work-education-row li:nth-child(2) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.2s; }
+
+.work-education-row p:nth-child(2) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.2s; }
+
+.work-education-row h3:nth-child(3) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.3s; }
+
+.work-education-row li:nth-child(3) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.3s; }
+
+.work-education-row p:nth-child(3) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.3s; }
+
+.work-education-row h3:nth-child(4) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.4s; }
+
+.work-education-row li:nth-child(4) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.4s; }
+
+.work-education-row p:nth-child(4) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.4s; }
+
+.work-education-row h3:nth-child(5) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.5s; }
+
+.work-education-row li:nth-child(5) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.5s; }
+
+.work-education-row p:nth-child(5) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.5s; }
+
+.work-education-row h3:nth-child(6) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.6s; }
+
+.work-education-row li:nth-child(6) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.6s; }
+
+.work-education-row p:nth-child(6) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.6s; }
+
+.work-education-row h3:nth-child(7) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.7s; }
+
+.work-education-row li:nth-child(7) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.7s; }
+
+.work-education-row p:nth-child(7) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.7s; }
+
+.work-education-row h3:nth-child(8) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.8s; }
+
+.work-education-row li:nth-child(8) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.8s; }
+
+.work-education-row p:nth-child(8) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.8s; }
+
+.work-education-row h3:nth-child(9) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.9s; }
+
+.work-education-row li:nth-child(9) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.9s; }
+
+.work-education-row p:nth-child(9) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 0.9s; }
+
+.work-education-row h3:nth-child(10) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1s; }
+
+.work-education-row li:nth-child(10) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1s; }
+
+.work-education-row p:nth-child(10) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1s; }
+
+.work-education-row h3:nth-child(11) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.1s; }
+
+.work-education-row li:nth-child(11) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.1s; }
+
+.work-education-row p:nth-child(11) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.1s; }
+
+.work-education-row h3:nth-child(12) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.2s; }
+
+.work-education-row li:nth-child(12) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.2s; }
+
+.work-education-row p:nth-child(12) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.2s; }
+
+.work-education-row h3:nth-child(13) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.3s; }
+
+.work-education-row li:nth-child(13) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.3s; }
+
+.work-education-row p:nth-child(13) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.3s; }
+
+.work-education-row h3:nth-child(14) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.4s; }
+
+.work-education-row li:nth-child(14) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.4s; }
+
+.work-education-row p:nth-child(14) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.4s; }
+
+.work-education-row h3:nth-child(15) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.5s; }
+
+.work-education-row li:nth-child(15) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.5s; }
+
+.work-education-row p:nth-child(15) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.5s; }
+
+.work-education-row h3:nth-child(16) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.6s; }
+
+.work-education-row li:nth-child(16) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.6s; }
+
+.work-education-row p:nth-child(16) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.6s; }
+
+.work-education-row h3:nth-child(17) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.7s; }
+
+.work-education-row li:nth-child(17) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.7s; }
+
+.work-education-row p:nth-child(17) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.7s; }
+
+.work-education-row h3:nth-child(18) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.8s; }
+
+.work-education-row li:nth-child(18) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.8s; }
+
+.work-education-row p:nth-child(18) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.8s; }
+
+.work-education-row h3:nth-child(19) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.9s; }
+
+.work-education-row li:nth-child(19) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.9s; }
+
+.work-education-row p:nth-child(19) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 1.9s; }
+
+.work-education-row h3:nth-child(20) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2s; }
+
+.work-education-row li:nth-child(20) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2s; }
+
+.work-education-row p:nth-child(20) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2s; }
+
+.work-education-row h3:nth-child(21) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.1s; }
+
+.work-education-row li:nth-child(21) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.1s; }
+
+.work-education-row p:nth-child(21) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.1s; }
+
+.work-education-row h3:nth-child(22) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.2s; }
+
+.work-education-row li:nth-child(22) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.2s; }
+
+.work-education-row p:nth-child(22) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.2s; }
+
+.work-education-row h3:nth-child(23) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.3s; }
+
+.work-education-row li:nth-child(23) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.3s; }
+
+.work-education-row p:nth-child(23) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.3s; }
+
+.work-education-row h3:nth-child(24) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.4s; }
+
+.work-education-row li:nth-child(24) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.4s; }
+
+.work-education-row p:nth-child(24) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.4s; }
+
+.work-education-row h3:nth-child(25) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.5s; }
+
+.work-education-row li:nth-child(25) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.5s; }
+
+.work-education-row p:nth-child(25) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.5s; }
+
+.work-education-row h3:nth-child(26) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.6s; }
+
+.work-education-row li:nth-child(26) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.6s; }
+
+.work-education-row p:nth-child(26) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.6s; }
+
+.work-education-row h3:nth-child(27) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.7s; }
+
+.work-education-row li:nth-child(27) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.7s; }
+
+.work-education-row p:nth-child(27) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.7s; }
+
+.work-education-row h3:nth-child(28) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.8s; }
+
+.work-education-row li:nth-child(28) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.8s; }
+
+.work-education-row p:nth-child(28) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.8s; }
+
+.work-education-row h3:nth-child(29) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.9s; }
+
+.work-education-row li:nth-child(29) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.9s; }
+
+.work-education-row p:nth-child(29) {
+  animation: fade-in forwards;
+  animation-duration: .25s;
+  animation-delay: 2.9s; }
 
 /*# sourceMappingURL=style.css.map */

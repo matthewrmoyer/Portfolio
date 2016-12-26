@@ -21,28 +21,7 @@ $dark-grey: hsl(0, 0%, 15%);
 * {
     box-sizing: border-box;
 }
-body{
-  //min font is 16 then scales .5vw
-    font-size: calc(16px + .5vw);
-    font-family: 'Open Sans';
-    background-color: $base-color;
-    color: $dark-grey;
-}
-h2{
-  padding: 2px 5px 2px 5px;
-}
-p{
-  padding: 1px 5px 5px 10px;
-}
 
-ul {
-  list-style-type: none;
-}
-
-//font-awesome characters
-.fa{
- 
-}
 
 //makes 12 col layout
 //TODO add break points?
@@ -89,6 +68,31 @@ ul {
   @include col(11);
 }.col-12{
   @include col(12);
+}
+
+body{
+    user-select: none;
+
+  //min font is 16 then scales .5vw
+    font-size: calc(16px + .5vw);
+    font-family: 'Open Sans';
+    background-color: $base-color;
+    color: $dark-grey;
+}
+h2{
+  padding: 2px 5px 2px 5px;
+}
+p{
+  padding: 1px 5px 5px 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+//font awesome characters
+.fa{
+  cursor: pointer;
 }
 .row{
   display: flex;
@@ -138,29 +142,50 @@ ul {
 .past-link-row{
     color: white;
 
+.past-heading{
+  cursor:pointer;
+}
   a{
   color: white;
 }
 }
 
 
+
 .work{
+  .work-paragraphs{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
     p {
       text-align: left;
+      display: inline;
+      margin-left: -15px;
+  }
   }
 
-}
+
 
 .education{
  .tesol-heading{
   line-height: 1.5;
 }
+.tesol-paragraphs{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.aerospace-studies-paragraphs{
+      padding-left: 10px;
+    padding-right: 10px;
+}
   p {
       text-align: left;
+      display: inline;
+      margin-left: -15px;
   }
  
  .aerospace-studies-heading{
-  line-height: 1.5;
+  padding-top: 10px;
  }
 }
 
@@ -169,5 +194,78 @@ ul {
   color: white;
 }
 }
+
+
+//hamburger module
+
+//animations
+@keyframes fade-in {
+    from {opacity: 0};
+    to {opacity: 1};
+}
+@keyframes fade-out{
+  from {opacity: 1};
+  to {opacity: 0};
+}
+
+
+.work-education-row{
+  font-size: 2vmax;
+  p{
+    opacity:0;
+  }
+  li{
+    opacity: 0;
+
+  }
+  h2{
+  }
+  h3{
+    opacity: 0;
+  }
+  } 
+
+
+//Sass for loop to stagger animation
+//can raise from 1 to x depending on how many items you have 
+@for $i from 1 to 30 {
+
+   .work-education-row h3:nth-child(#{$i}) {
+    animation: fade-in forwards;
+    animation-duration: .25s;
+animation-delay: $i * .1s;
+
+  }    
+
+  .work-education-row li:nth-child(#{$i}) {
+    animation: fade-in forwards;
+    animation-duration: .25s;
+animation-delay: $i * .1s;
+
+  }
+  .work-education-row p:nth-child(#{$i}) {
+    animation: fade-in forwards;
+    animation-duration: .25s;
+animation-delay: $i * .1s;
+
+  }
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
