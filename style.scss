@@ -228,7 +228,7 @@ ul {
 
 //Sass for loop to stagger animation
 //can raise from 1 to x depending on how many items you have 
-@for $i from 1 to 30 {
+@for $i from 1 to 100 {
 
    .work-education-row h3:nth-child(#{$i}) {
     animation: fade-in forwards;
