@@ -108,6 +108,8 @@ ul {
 
 }
 
+
+//index.html
 .name-row{
   justify-content: center;
 }
@@ -133,6 +135,7 @@ ul {
 
 .personal-background-summary{
   font-size: calc(16px + 1vw);
+  background-color: $primary-color;
   p{
     padding-bottom: 10px;
     line-height: 1.1;
@@ -141,6 +144,9 @@ ul {
 
 .past-link-row{
     color: white;
+    .fa{
+  color: $accent-color;
+} 
 
 .past-heading{
   cursor:pointer;
@@ -193,6 +199,9 @@ ul {
   a{
   color: white;
 }
+.fa{
+  color: $accent-color;
+}  
 }
 
 
@@ -210,7 +219,7 @@ ul {
 
 
 .work-education-row{
-  font-size: 2vmax;
+  font-size: calc(16px + 1vw);
   p{
     opacity:0;
   }
@@ -233,32 +242,40 @@ ul {
    .work-education-row h3:nth-child(#{$i}) {
     animation: fade-in forwards;
     animation-duration: .25s;
-animation-delay: $i * .1s;
+    animation-delay: $i * .1s;
 
   }    
 
   .work-education-row li:nth-child(#{$i}) {
     animation: fade-in forwards;
     animation-duration: .25s;
-animation-delay: $i * .1s;
+    animation-delay: $i * .1s;
 
   }
   .work-education-row p:nth-child(#{$i}) {
     animation: fade-in forwards;
-    animation-duration: .25s;
-animation-delay: $i * .1s;
+    animation-duration: .1s;
+    animation-delay: $i * .02s;
 
   }
  
 
 }
 
+//future.html
+.future-heading{
+  font-size: calc(20px + 1vw);
+}
 
+.future-summary{
+  font-size: calc(16px + 1vw);
+}
 
-
-
-
-
+.future-gif{
+    background: url(file:///Users/matthewmoyer/Desktop/Portfolio%20Site/future-gif.gif) center;
+    background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 
