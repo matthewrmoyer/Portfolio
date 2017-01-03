@@ -142,6 +142,52 @@ ul {
   }
 }
 
+.project-heading{
+  cursor:pointer;
+    color: white;
+    .fa{
+  color: $accent-color;
+} 
+}
+
+//TODO make this a mixin
+.project-1{
+  p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    display: inline;
+    margin-left: -10px;
+  }
+  }
+
+.project-2{
+  p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    display: inline;
+    margin-left: -10px;
+  }
+  }
+
+.project-3{
+  p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    display: inline;
+    margin-left: -10px;
+  }
+  }
+
+.tech-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
 .past-link-row{
     color: white;
     .fa{
@@ -217,6 +263,22 @@ ul {
   to {opacity: 0};
 }
 
+.project-row{
+  font-size: calc(16px + 1vw);
+  p{
+    opacity:0;
+  }
+  li{
+    opacity: 0;
+
+  }
+  h2{
+  }
+  h3{
+    opacity: 0;
+  }
+  } 
+
 
 .work-education-row{
   font-size: calc(16px + 1vw);
@@ -234,6 +296,35 @@ ul {
   }
   } 
 
+
+
+
+//Sass for loop to stagger animation
+//can raise from 1 to x depending on how many items you have 
+@for $i from 1 to 100 {
+
+   .project-row h3:nth-child(#{$i}) {
+    animation: fade-in forwards;
+    animation-duration: .25s;
+    animation-delay: $i * .1s;
+
+  }    
+
+  .project-row li:nth-child(#{$i}) {
+    animation: fade-in forwards;
+    animation-duration: .25s;
+    animation-delay: $i * .1s;
+
+  }
+  .project-row p:nth-child(#{$i}) {
+    animation: fade-in forwards;
+    animation-duration: .1s;
+    animation-delay: $i * .02s;
+
+  }
+ 
+
+}
 
 //Sass for loop to stagger animation
 //can raise from 1 to x depending on how many items you have 
