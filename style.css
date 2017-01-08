@@ -184,6 +184,8 @@ ul {
   color: white; }
   .project-heading .fa {
     color: #2aa775; }
+  .project-heading:active {
+    box-shadow: inset 0 0 3px 0px black; }
 
 .project-1 p {
   padding-left: 10px;
@@ -220,6 +222,8 @@ ul {
     color: #2aa775; }
   .past-link-row .past-heading {
     cursor: pointer; }
+    .past-link-row .past-heading:active {
+      box-shadow: inset 0 0 3px 0px black; }
   .past-link-row a {
     color: white; }
 

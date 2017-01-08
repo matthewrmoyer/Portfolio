@@ -150,6 +150,10 @@ ul {
   .fa{
     color: $accent-color;
   } 
+  &:active{
+            box-shadow: inset 0 0 3px 0px black;
+
+  }
 }
 
 
@@ -196,17 +200,19 @@ ul {
 
 
 .past-link-row{
-    color: white;
-    .fa{
-  color: $accent-color;
-} 
-
-.past-heading{
-  cursor:pointer;
-}
-  a{
   color: white;
-}
+  .fa{
+    color: $accent-color;
+  } 
+  .past-heading{
+    cursor:pointer;
+    &:active{
+      box-shadow: inset 0 0 3px 0px black;
+    }
+  }
+  a{
+    color: white;
+  }
 }
 
 
