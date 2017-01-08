@@ -174,7 +174,7 @@ ul {
 
 .personal-background-summary {
   font-size: calc(16px + 1vw);
-  background-color: #f4753e; }
+  background-color: red; }
   .personal-background-summary p {
     padding-bottom: 10px;
     line-height: 1.1; }
@@ -247,10 +247,7 @@ ul {
   padding-top: 10px; }
 
 .future-link-row a {
-  color: white;
-  text-decoration: none; }
-  .future-link-row a:hover {
-    text-decoration: underline; }
+  color: white; }
 .future-link-row .fa {
   color: #2aa775; }
 
@@ -3263,4 +3260,4 @@ ul {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=syle.css.map */

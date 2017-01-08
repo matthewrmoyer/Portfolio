@@ -142,13 +142,16 @@ ul {
   }
 }
 
+
+
 .project-heading{
   cursor:pointer;
-    color: white;
-    .fa{
-  color: $accent-color;
-} 
+  color: white;
+  .fa{
+    color: $accent-color;
+  } 
 }
+
 
 //TODO make this a mixin
 .project-1{
@@ -185,6 +188,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  line-height: 2;
+  li{
+    padding: 3px;
+  }
 }
 
 
@@ -244,6 +251,10 @@ ul {
 .future-link-row{
   a{
   color: white;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 .fa{
   color: $accent-color;
@@ -352,6 +363,8 @@ ul {
  
 
 }
+
+
 
 //future.html
 .future-heading{
